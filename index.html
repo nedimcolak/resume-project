@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be55d2ec73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
+    <title>Nedim Čolak Resume</title>
+    <!--
+        Name: Nedim Čolak
+        Course: Web Application Development
+        Assignment: Project 2 Html resume
+        Due date: 05.11.2020.
+        Purpose: The purpose of this assignment is to gain basic knowledge of css styling
+    -->
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container nav-align">
+                <nav>
+                    <ul>
+                        <li><a href="project1.html" class="btn">Project 1</a></li>
+                        <li><a href="#about-me" class="btn">About me!</a></li>
+                        <li><a href="#projects" class="btn">Projects</a></li>
+                        <li><a href="#contact-me" class="btn">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="banner-text">
+                <img src="img/profile.jpg" alt="Profile photo" class="profile">
+                <h1 class="title">
+                Nedim Čolak
+                </h1>
+                <h2>Software Engineering Student, Web Developer</h2>
+            </div>
+        </div>
+    </header>
+    
+    <section class="about-me">
+        <div id="about-me" class="container about-me-format">
+            <h2 class="section-h2">About me!</h2>
+            <div class="education">
+                <h3 class="section-h3">Education</h3>
+                <ul class="edu" >
+                    <li>Karađoz-begova medresa (2013-2017)</li>
+                    <li>International University of Sarajevo (2017-Present)</li>
+                </ul>
+            </div>
+            <p>My name is Nedim. I am Software Engineering student who loves to code. My programming journey started
+                early as I was curious and wanted to know how software is made. Few years later I started studying Software Engineering. 
+                Now, my greatest passion is web development, I want to become Full Stack web developer.<br>
+                I have good knowledge in these languages/technologies: </p>
+                <div class="technologies">
+                    <ul>
+                        <li>
+                            <i class="fas fa-code icon"></i>
+                            <p>C++</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-java icon"></i>
+                            <p>Java</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-js icon"></i>
+                            <p>JavaScript</p></li>
+                        <li>
+                            <i class="fab fa-angular icon"></i>
+                            <p>Angular</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-android icon"></i>
+                            <p>Android SDK</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-database icon"></i>
+                            <p>MySQL</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-server icon"></i>
+                            <p>Firebase</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+
+    <section class="container projects-section">
+        <h2 class="section-h2">Projects</h2>
+        <div id="projects" class="projects">
+            <div class="project">
+                <div class="project-title">
+                    <h3 class="section-h3">Food Order Android Application (2018)</h3>
+                    <strong>Java, Firebase</strong>
+                </div>
+                <hr>
+                <p>MVC Android application with functionality for ordering food in restaurants. 
+                    This application uses Firebase Realtime database for storing data. In this project I 
+                    improved my knowledge in OOP and Firebase technology.
+                </p>
+                <div class="github">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/nedimcolak/food_ordering_app">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">
+                    <h3 class="section-h3">COVID-19 status (2020)</h3>
+                    <strong>HTML/CSS, JavaScript</strong>
+                </div>
+                <hr>
+                <p>A simple web app that shows status of COVID-19 in Bosnia and Herzegovina.
+                    The app shows: number of infected people, new cases for current day, recovered people and number of deaths.
+                </p>
+                <div class="github">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/nedimcolak/coronaVirusApp" class="">GitHub</a>
+                </div>
+                <div class="github">
+                    <i class="fas fa-globe-europe"></i>
+                    <a href="https://covidbosnia.netlify.app">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">
+                    <h3>Various personal projects</h3>
+                    <strong>HTML/CSS, JavaScript, Angular, Android SDK, Java, MySQL</strong>
+                </div>
+                <hr>
+                <p>Personal projects that helped me gain skills and knowledge and helped me grow.
+                    You can check few of them on my GitHub profile
+                </p>
+                <div class="github">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/nedimcolak/">GitHub profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-me" class="contact-me">
+        <h2 class="section-h2">Contact me</h2>
+        <div class="contact-me-form">
+            <p>You can contact me by filling out this form.</p>
+            <form action="submit">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Your Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="msg">Your Message:</label><br>
+                <input type="text" id="msg" name="msg"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

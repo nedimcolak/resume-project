@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedim Čolak Resume</title>
+    <!--
+        Name: Nedim Čolak
+        Course: Web Application Development
+        Assignment: Project 1 Html resume
+        Due date: 25.10.2020.
+        Purpose: The purpose of this assignment is to gain basic knowledge of html
+    -->
+
+    <!-- This is simple Html file without any styling. It should include some css in the next assignment -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me!</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Nedim Čolak</h1>
+        <h2>Software Engineering Student</h2>
+    </header>
+    
+    <section>
+        <div id="about-me">
+            <h2>About me!</h2>
+            <div>
+                <h3>Education</h3>
+                <ul>
+                    <li>Karađoz-begova medresa (2013-2017)</li>
+                    <li>International University of Sarajevo (2017-Present)</li>
+                </ul>
+            </div>
+            <p>I am highly motivated Software Engineering student who likes to code. My main
+                interest is Web Development, but I have some experience with Android development as well.
+                I like to solve real-world problems with code. <br>
+                I have good knowledge in these languages/technologies:
+                <ul>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                    <li>Android SDK</li>
+                    <li>MySQL</li>
+                    <li>Firebase</li>
+                </ul>
+            </p>  
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div id="projects">
+            <div class="project">
+                <h3>Food Order Android Application (2018)</h3>
+                <strong>Java, Firebase</strong>
+                <p>MVC Android application with functionality for ordering food in restaurants. 
+                    This application uses Firebase Realtime database for storing data. In this project I 
+                    improved my knowledge in OOP and Firebase technology.
+                </p>
+                <a href="https://github.com/nedimcolak/food_ordering_app">GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>COVID-19 status (2020)</h3>
+                <strong>HTML/CSS, JavaScript</strong>
+                <p>A simple web app that shows status of COVID-19 in Bosnia and Herzegovina.
+                    The app shows: number of infected people, new cases for current day, recovered people and number of deaths.
+                </p>
+                <a href="https://github.com/nedimcolak/coronaVirusApp">GitHub</a>
+                <a href="https://covidbosnia.netlify.app">Live Demo</a>
+            </div>
+
+            <div class="project">
+                <h3>Various personal projects</h3>
+                <strong>HTML/CSS, JavaScript, Angular, Android SDK, Java, MySQL</strong>
+                <p>Personal projects that helped me gain skills and knowledge and helped me grow.
+                    You can check few of them on my GitHub profile
+                </p>
+                <a href="https://github.com/nedimcolak/">GitHub profile</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <form>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Your Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="msg">Your Message:</label><br>
+            <input type="text" id="msg" name="msg"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+</body>
+</html>

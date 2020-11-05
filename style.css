@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F4F3;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* GENERAL STYLING */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #F9F4F5;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-align ul {
+    display: flex;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #001427;
+    height: 70px;
+    color: #F9F4F5;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.navbar a {
+    padding: 10px 10px;
+    margin: 0 5px;
+}
+
+.section-h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 2em;
+}
+
+.section-h3 {
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color:  #001f3b;
+}
+
+/* HEADER */
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /**/
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.banner-text{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* ABOUT ME SECTION */
+.edu {
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.about-me p {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.about-me {
+    background-color:  #001427;
+    color: white;
+    padding: 30px 0;
+}
+
+.education {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.technologies {
+    padding: 40px 0;
+
+}
+
+.technologies ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technologies ul li {
+    text-align: center;
+}
+
+.icon {
+    font-size: 4em;
+}
+
+/* PROJECTS SECTION */
+.projects-section {
+    padding: 30px 0;
+    color: #001427;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.project {
+    background-color: #001427;
+    margin: 0 5px;
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.project-title {
+    height: 80px;
+}
+
+.github {
+    width: auto;
+    height: 50px;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.github:hover {
+    background-color: #001f3b;
+}
+
+/* CONTACT ME SECTION */
+.contact-me {
+    padding: 30px 0;
+    background-color: #001427;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me-form {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    background-color: #001f3b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-me-form form {
+    padding: 30px;
+}
+
+.contact-me-form input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    outline: none;
+}
+
+.contact-me-form input[type=submit]{
+    background-color: #001427;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
