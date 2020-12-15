@@ -10,9 +10,10 @@
     <!--
         Name: Nedim Čolak
         Course: Web Application Development
-        Assignment: Project 2 Html resume
-        Due date: 05.11.2020.
-        Purpose: The purpose of this assignment is to gain basic knowledge of css styling
+        Assignment: Project 3 Html+css+js
+        Due date: 17.12.2020.
+        Purpose: The purpose of this assignment is to understand javascript logic and syntax, along with the api calls.
+        Description: The javascript code calls github api and updates projects section, as new projects come the section will be updated.
     -->
 
 </head>
@@ -93,55 +94,6 @@
     <section class="container projects-section">
         <h2 class="section-h2">Projects</h2>
         <div id="projects" class="projects">
-            <div class="project">
-                <div class="project-title">
-                    <h3 class="section-h3">Food Order Android Application (2018)</h3>
-                    <strong>Java, Firebase</strong>
-                </div>
-                <hr>
-                <p>MVC Android application with functionality for ordering food in restaurants. 
-                    This application uses Firebase Realtime database for storing data. In this project I 
-                    improved my knowledge in OOP and Firebase technology.
-                </p>
-                <div class="github">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/nedimcolak/food_ordering_app">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">
-                    <h3 class="section-h3">COVID-19 status (2020)</h3>
-                    <strong>HTML/CSS, JavaScript</strong>
-                </div>
-                <hr>
-                <p>A simple web app that shows status of COVID-19 in Bosnia and Herzegovina.
-                    The app shows: number of infected people, new cases for current day, recovered people and number of deaths.
-                </p>
-                <div class="github">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/nedimcolak/coronaVirusApp" class="">GitHub</a>
-                </div>
-                <div class="github">
-                    <i class="fas fa-globe-europe"></i>
-                    <a href="https://covidbosnia.netlify.app">Live Demo</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">
-                    <h3>Various personal projects</h3>
-                    <strong>HTML/CSS, JavaScript, Angular, Android SDK, Java, MySQL</strong>
-                </div>
-                <hr>
-                <p>Personal projects that helped me gain skills and knowledge and helped me grow.
-                    You can check few of them on my GitHub profile
-                </p>
-                <div class="github">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/nedimcolak/">GitHub profile</a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -160,5 +112,7 @@
             </form>
         </div>
     </footer>
+    <script src="js/ApiCall.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
